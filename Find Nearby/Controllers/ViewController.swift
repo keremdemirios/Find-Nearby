@@ -81,7 +81,7 @@ class ViewController: UIViewController {
 
             switch locationManager.authorizationStatus {
             case .authorizedWhenInUse, .authorizedAlways:
-                let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
+                let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 1250, longitudinalMeters: 1250)
                 mapView.setRegion(region, animated: true)
             case .denied:
                 print("Locaiton servies has been denied.")
